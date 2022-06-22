@@ -1,0 +1,21 @@
+
+
+    #wrapper {
+        width: auto;
+        margin: auto;
+        text-align: left;
+
+        background-position: left 5px;
+        background-repeat: no-repeat;
+        min-height: 400px;
+    }
+
+.article #aside {
+        float: none;
+        width: auto;
+    }
+
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+    }
