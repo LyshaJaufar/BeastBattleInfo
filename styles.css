@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   background-color: #9deba9; 
   font-family: "Montserrat", sans-serif;
 }
@@ -41,7 +41,7 @@ li a:hover {
 
 .navMenu {
   position:absolute;
-  top: 5%;
+  top: 8%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -53,7 +53,7 @@ li a:hover {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 14px;
+  padding: 7px;
   width: 80px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -63,3 +63,43 @@ li a:hover {
   color: #fddb3a;
 }
 
+.below-header {
+    font-size: 1.5em;
+    background-color: white;
+    top: 20%;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    padding-left:10%;
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow:1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+.heading {
+    top: 10%;
+    display: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu a {
+      padding: 0.5%;
+      font-size: 0.8em;
+      margin-left: 10%;
+  }
+}
