@@ -92,14 +92,44 @@ li a:hover {
 }
 
 .heading {
-    top: 10%;
-    display: absolute;
+    margin-top: 5%;
+    margin-left: 8%;
+    position: absolute;
 }
 
 @media screen and (max-width: 600px) {
+
+  .navMenu {
+      top: 8%;
+      left: 5%;
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+  }
+
   .navMenu a {
-      padding: 0.5%;
+      padding: 15px;
       font-size: 0.8em;
-      margin-left: 10%;
+      margin-left: 0%;
+      font-weight: bold;
+
+  }
+
+  .below-header {
+    font-size: 1.5em;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    padding-left:10%;
+    padding-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .heading {
+    margin-top: 3%;
+    margin-left: 7.5%;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 }
