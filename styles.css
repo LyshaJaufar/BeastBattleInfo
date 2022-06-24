@@ -193,13 +193,14 @@ input {
     font-size: 0.9em;
     position: absolute;
     width: 100%;
-    height: 570%;
+
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
     background-color: #9deba9; 
+    box-shadow: none;
   }
 
   .heading {
@@ -261,17 +262,19 @@ input {
     font-size: 0.9em;
     position: absolute;
     width: 100%;
-    height: 590%;
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
     background-color: #9deba9; 
+    box-shadow: none;
   }
   .heading {
-    margin-top: 4%;
-    margin-left: 6.5%;
+    margin-top: 0%;
+    padding-top: 6%;
+    margin-left: 0%;
+    padding-left: 6.5%;
     position: absolute;
     font-size: 1.2em;
     font-weight: bold;
