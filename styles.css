@@ -164,15 +164,22 @@ input {
 @media screen and (max-width: 600px) {
 
   body, html {
-    background-color: white; 
+    background-color: #9deba9; 
   }
 
   .navMenu {
-      top: 10%;
-      left: 5%;
+      padding-left: 5%;
+      margin-top: 0%;
+      margin-right: 0%;
+      padding-top: 3%;
+      left: 0%;
+      width: 100%;
       -webkit-transform: translate(0%, 0%);
       transform: translate(0%, 0%);
-  }
+      height: 15%;;
+      background-color: white;
+      position: absolute;
+    }
 
   .navMenu a {
       padding: 10px;
@@ -196,12 +203,15 @@ input {
   }
 
   .heading {
-    margin-top: 3%;
-    margin-left: 7%;
+    margin-top: 0%;
+    padding-top: 6%;
+    margin-left: 0%;
+    padding-left: 6.5%;
+    width: 100%;
     position: absolute;
     font-size: 1.2em;
     font-weight: bold;
-    top: 2%;
+    background-color: white;
   }
 
   .image {
@@ -227,6 +237,14 @@ input {
     background-color: white; 
   }
 
+  .navMenu {
+      padding-left: 5%;
+      margin-top: 0%;
+      margin-right: 0%;
+      padding-top: 3%;
+      left: 0%;
+      width: 100%;
+  }
   .navMenu a {
       padding: 5px;
       font-size: 0.6em;
