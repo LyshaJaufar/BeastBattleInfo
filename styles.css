@@ -67,7 +67,7 @@ li a:hover {
 .below-header {
     font-size: 1em;
     background-color: white;
-    top: 20%;
+    top: 25%;
     position: absolute;
     height: 500%;
     width: 80%;
@@ -109,18 +109,73 @@ li a:hover {
 
 }
 
+input {
+  border: none;
+}
+
+.search-bar {
+  position: absolute;
+  display: flex;
+  top: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 2%;
+  background-color: black;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+
+}
+.search {
+    background-color:black;
+}
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 600px) {
 
+  body, html {
+    background-color: white; 
+  }
+
   .navMenu {
-      top: 8%;
+      top: 10%;
       left: 5%;
       -webkit-transform: translate(0%, 0%);
       transform: translate(0%, 0%);
   }
 
   .navMenu a {
-      padding: 15px;
+      padding: 10px;
       font-size: 0.8em;
       margin-left: 0%;
       font-weight: bold;
@@ -137,23 +192,40 @@ li a:hover {
     padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
+    background-color: #9deba9; 
   }
 
   .heading {
     margin-top: 3%;
-    margin-left: 7.5%;
+    margin-left: 7%;
     position: absolute;
     font-size: 1.2em;
     font-weight: bold;
+    top: 2%;
   }
 
   .image {
     height: 250px;
     margin-left: 0%;
   }
+
+  .search-bar {
+    padding-left: 6%;
+    top: 20%;
+    height: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width:100%;
+  }
+
+
 }
 
 @media screen and (max-width: 400px) {
+
+  body, html {
+    background-color: white; 
+  }
 
   .navMenu a {
       padding: 5px;
@@ -176,6 +248,7 @@ li a:hover {
     padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
+    background-color: #9deba9; 
   }
   .heading {
     margin-top: 4%;
@@ -185,4 +258,10 @@ li a:hover {
     font-weight: bold;
   }
 
+  .search-bar {
+    margin-left:2%;
+    margin-left:7%;
+    top: 15%;
+    height: 3%;
+  }
 }
