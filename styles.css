@@ -156,8 +156,8 @@ li a:hover {
 @media screen and (max-width: 400px) {
 
   .navMenu a {
-      padding: 7px;
-      font-size: 0.8em;
+      padding: 5px;
+      font-size: 0.6em;
       margin-left: 0%;
       font-weight: bold;
   }
@@ -176,6 +176,13 @@ li a:hover {
     padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
+  }
+  .heading {
+    margin-top: 4%;
+    margin-left: 6.5%;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
 }
