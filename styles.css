@@ -64,13 +64,14 @@ li a:hover {
 }
 
 .below-header {
-    font-size: 1.5em;
+    font-size: 1em;
     background-color: white;
     top: 20%;
     position: absolute;
     height: 80%;
     width: 80%;
-    padding-left:10%;
+    padding-left:7%;
+    padding-right: 7%;
     padding-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
@@ -115,12 +116,13 @@ li a:hover {
   }
 
   .below-header {
-    font-size: 1.5em;
+    font-size: 0.9em;
     position: absolute;
     height: 80%;
     width: 100%;
-    padding-left:10%;
-    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -132,4 +134,15 @@ li a:hover {
     font-size: 1.2em;
     font-weight: bold;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+  .navMenu a {
+      padding: 7px;
+      font-size: 0.8em;
+      margin-left: 0%;
+      font-weight: bold;
+  }
+
 }
