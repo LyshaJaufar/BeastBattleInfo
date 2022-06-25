@@ -1,11 +1,19 @@
 import Accessories from "./accessory.js"
 
 const userCards = document.querySelector(".user-cards")
+const searchInput = document.querySelector("[data-search]")
 
 var accessories = new Accessories()
 var accessoryArray = accessories.accessories
 
 createHTMLforCards()
+searchInput.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase()
+    accessoryArray.forEach(accessory => {
+        const isVisible = accessory.name.toLowerCase().includes(value)
+        document.getElementById(accessory.name).classList.toggle('hide', !isVisible)
+    })
+})
 
 function createHTMLforCards() {
     for (var i = 0; i < accessoryArray.length; i++) {
@@ -20,6 +28,7 @@ function createHTML(currentAccessory) {
     var cardImg = document.createElement('img')
 
     cardImg.setAttribute("src", currentAccessory.image); 
+    div.id = currentAccessory.name
 
     div.classList.add("card")
     cardHeader.classList.add("header")
