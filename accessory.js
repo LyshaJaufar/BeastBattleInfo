@@ -22,6 +22,7 @@ function initialise() {
         "assets/bloodboar'sdeathstar.png"),
         new Accessory("Burnstone",
         "Opponent discards beasts from their deck double to the number of place cards they have.", 
-        "assets/burnstone.png")
+        "assets/burnstone.png"),
+        
     ]
 }
