@@ -135,8 +135,8 @@ input {
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9DBFAF;
-
 }
+
 .search {
     background-color:black;
     height: 36px;
@@ -303,7 +303,6 @@ input {
     font-size: 0.9em;
     position: absolute;
     width: 100%;
-
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 4%;
@@ -339,7 +338,6 @@ input {
     margin-right: 0%;
     width:100%;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -384,7 +382,7 @@ input {
     margin-top: 0%;
     padding-top: 6%;
     margin-left: 0%;
-    height: 7%;
+    height: 8%;
     padding-left: 6.5%;
     position: absolute;
     font-size: 1.2em;
@@ -394,10 +392,14 @@ input {
   .search-wrapper {
     margin-left:0%;
     margin-left:0%;
-    top: 20%;
-    height: 5%;
+    top: 15%;
+    height: 15%;
     padding-left: 6.5%;
-    width: 100%;
+    width: 10%;
+  }
+
+  .search {
+    height: 60px;
   }
 
   .card-img {
