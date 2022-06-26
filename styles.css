@@ -196,6 +196,7 @@ input {
   color: rgb(45, 45, 45);
   height: 100px;
   text-align: center;
+  font-weight: 600;
 }
 
 .hide {
