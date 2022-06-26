@@ -366,7 +366,7 @@ input {
   }
 
   .image {
-    height: 200px;
+    height: 160px;
     margin-left: 5%;
   }
   .below-header {
@@ -385,7 +385,7 @@ input {
     margin-top: 0%;
     padding-top: 6%;
     margin-left: 0%;
-    height: 5%;
+    height: 7%;
     padding-left: 6.5%;
     position: absolute;
     font-size: 1.2em;
