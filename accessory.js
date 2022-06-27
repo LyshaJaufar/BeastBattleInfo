@@ -157,7 +157,23 @@ function initialise() {
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/dragonscale.png?raw=true"),
         new Accessory("Chainmail Vest",
         "Owner may disable opponent's any accessory.", 
-        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/chainmailvest.png?raw=true")
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/chainmailvest.png?raw=true"),
+        new Accessory("Jade Ring",
+        "Defeats AVANTIA.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/jadering.png?raw=true"),
+        new Accessory("Wasp Sting",
+        "Defeats GORGONIA.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/waspsting.png?raw=true"),
+        new Accessory("Red Jewel",
+        "Defeats KING HUGO'S CASTLE.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/redjewel.png?raw=true"),
+        new Accessory("Black Cactus",
+        "Defeats WICKED TREES.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/blackcactus.png?raw=true"),
+        new Accessory("Icicle",
+        "Defeats MALVEL'S CASTLE.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/blackcactus.png?raw=true"),
     ]
 }
+
 
