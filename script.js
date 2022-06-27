@@ -27,14 +27,29 @@ var spiritsArray = spirits.spirits
 getPath()
 var accessoryArray = accessories.accessories
 
-
 createHTMLforCards()
 searchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase()
-    accessoryArray.forEach(accessory => {
-        const isVisible = accessory.name.toLowerCase().includes(value)
-        document.getElementById(accessory.name).classList.toggle('hide', !isVisible)
-    })
+
+    if (armouryPage == true || amuletsPage == true || otherPage == true ||
+         misfortunesPage == true || elementalsPage == true || jewelsPage == true || allPage == true){
+            accessoryArray.forEach(accessory => {
+                const isVisible = accessory.name.toLowerCase().includes(value)
+                document.getElementById(accessory.name).classList.toggle('hide', !isVisible)
+            })
+    }
+    else if (placesPage == true) {
+        placesArray.forEach(place => {
+            const isVisible = place.name.toLowerCase().includes(value)
+            document.getElementById(place.name).classList.toggle('hide', !isVisible)
+        })
+    }
+    else if (spiritsArray == true) {
+        spiritsArray.forEach(spirit => {
+            const isVisible = spirit.name.toLowerCase().includes(value)
+            document.getElementById(spirit.name).classList.toggle('hide', !isVisible)
+        })
+    }
 })
 
 function createHTMLforCards() {
@@ -55,9 +70,9 @@ function createHTMLforCards() {
     } 
 
     for (var i = 0; i < length; i++) {
-        console.log(cardArray)
         createHTML(cardArray[i])
     }
+
 }
 
 function getPath() {
@@ -69,47 +84,40 @@ function getPath() {
     } 
     else if (page == 'elementals.html') {
         elementalsPage = true
-        spiritsPage = false, armouryPage = false, amuletsPage = false, jewelsPage = false, misfortunesPage = false, otherPage = false
         return accessories.theELementals()
     } 
     else if (page == 'misfortunes.html') {
         misfortunesPage = true
-        spiritsPage = false, armouryPage = false, amuletsPage = false, jewelsPage = false, otherPage = false, elementalsPage = false, placesPage = false
         return accessories.misfortunes()
     } 
     else if (page == 'jewels.html') {
         jewelsPage = true
-        spiritsPage = false, armouryPage = false, amuletsPage = false, otherPage = false, misfortunesPage = false, elementalsPage = false, placesPage = false
         return accessories.theJewels()
     }
     else if (page == 'amulets.html') {
         amuletsPage = true
-        spiritsPage = false, armouryPage = false, otherPage = false, jewelsPage = false, misfortunesPage = false, elementalsPage = false, placesPage = false
         return accessories.theAmulets()
     }
     else if (page == 'armoury.html') {
         armouryPage = true
-        spiritsPage = false, otherPage = false, amuletsPage = false, jewelsPage = false, misfortunesPage = false, elementalsPage = false, placesPage = false
         return accessories.theArmoury()
     }
     else if (page == 'other.html') {
         otherPage = true
-        spiritsPage = false, armouryPage = false, amuletsPage = false, jewelsPage = false, misfortunesPage = false, elementalsPage = false, placesPage = false
         return accessories.other()
     }
     else if (page == 'places.html') {
         placesPage = true
-        spiritsPage = false, armouryPage = false, amuletsPage = false, jewelsPage = false, misfortunesPage = false, elementalsPage = false, otherPage = false
         return places;                                                                                                                                                          
     }
     else if (page == 'spirits.html') {
         spiritsPage = true
-        placesPage = false, armouryPage = false, amuletsPage = false, jewelsPage = false, misfortunesPage = false, elementalsPage = false, otherPage = false
         return spirits;                                                                                                                                                          
     }
 }
 
 function createHTML(currentCard) {
+
     var div = document.createElement('div')
     var cardHeader = document.createElement('div')
     var cardBody = document.createElement('div')
@@ -126,7 +134,8 @@ function createHTML(currentCard) {
     cardHeader.innerHTML = currentCard.name
     cardBody.innerHTML = currentCard.description
 
-    if (placesPage = true || armouryPage == true || amuletsPage == true || jewelsPage == true || elementalsPage == true || misfortunesPage == true) {
+    if (spiritsPage == true || placesPage == true || armouryPage == true || amuletsPage == true || 
+        jewelsPage == true || elementalsPage == true || misfortunesPage == true) {
         belowHeaderDiv.classList.add('shorten')
     }
     if (otherPage == true) {
