@@ -1,6 +1,29 @@
 export default class Accessories {
-    constructor(accessories = initialise()) {
-        this.accessories = accessories
+    allAccessories() {
+        this.accessories = initialise()
+    }
+    misfortunes() {
+        this.accessories = misfortunes()
+    }
+
+    theELementals() {
+        this.accessories = theELementals()
+    }
+
+    theJewels() {
+        this.accessories = theJewels()
+    }
+
+    theAmulets() {
+        this.accessories = theAmulets()
+    }
+
+    theArmoury() {
+        this.accessories = theArmoury()
+    }
+
+    other() {
+        this.accessories = other()
     }
 }
 
@@ -10,6 +33,258 @@ class Accessory {
         this.description = description
         this.image = image
     }
+}
+
+function other() {
+    return [
+        new Accessory("Balisk's Claw", 
+        "Owner may draw two cards at random from the opponent's deck. Opponent is not allowed to choose nor peek at the card.",
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/balisk'sclaw.png?raw=true"),
+        new Accessory("BloodBloar's Deathstar", 
+        "Counters any OP beast; AGE: 400+, POWER: 280+, MAGIC: 190+, FEAR: 90+", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/bloodboar'sdeathstar.png?raw=true"),
+        new Accessory("Burnstone",
+        "Opponent discards beasts from their deck double to the number of place cards they have.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/burnstone.png?raw=true"),
+        new Accessory("Fang",
+        "Owner may search the discard pile and draw 2 beasts. Cannot be casted in the current round", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(752).png?raw=true"),
+        new Accessory("Magic Harness",
+        "Owner may steal any one of opponent's place cards.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(753).png?raw=true"),
+        new Accessory("White Flower",
+        "Owner may save a single beast of their choice if they lose the round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(754).png?raw=true"),
+        new Accessory("Pheonix Talon",
+        "All accesories return to their owner's deck after one round. Can draw +1 card before the battle phase.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(756).png?raw=true"),
+        new Accessory("Vines",
+        "Opponent's beasts are restricted from attacking for the following 3 rounds in a single lane.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(757).png?raw=true"),
+        new Accessory("Oradu's Spell Book",
+        "If owner has saved enchantments / elementals, they may search their deck for a brute/ elemental beast and replace it with a beast in hand. Can be used before and during battle phase", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(758).png?raw=true"),
+        new Accessory("Oradu's Robe",
+        "Can counter all accessories in a round by discarding a beast in your hand for a round. You may draw a card from your  deck after each discard.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(759).png?raw=true"),
+        new Accessory("The Sceptre of Tangala",
+        "Card can shape shift to any accessory in the game.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(760).png?raw=true"),
+        new Accessory("Magic Herbs",
+        "Accessory may time travel and change a course of events that has occurred.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(761).png?raw=true"),
+        new Accessory("Eagle Feather",
+        "If opponent wins battle phase of the round, owner may steal a beast of their choice.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(762).png?raw=true"),
+        new Accessory("The Ring of Tangala",
+        "For every beast of owner's that loses in battle phase, they may draw an accessory from the discard pile. Card may be used during battle phase or returned to owner's deck.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(764).png?raw=true"),
+        new Accessory("Lightning Staff",
+        "Owner may change their hand of beasts. Must be casted before battle phase.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(765).png?raw=true"),
+        new Accessory("Horseshoe Fragment",
+        "Owner may change their hand of beasts at the start of the battle phase.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(766).png?raw=true"),
+        new Accessory("Knife",
+        "Defeats any beast with scales.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(767).png?raw=true"),
+        new Accessory("Silver Disc",
+        "Defeats any beast with (a) shell(s).", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(769).png?raw=true"),
+        new Accessory("Dragon Scale",
+        "Disables opponent's accessories for the round. Only affects accessories drawn after the card has been casted", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(770).png?raw=true"),
+        new Accessory("Slivka's Scale",
+        "Disables opponent's place cards for the round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(771).png?raw=true"),
+        new Accessory("Spider's Web Gloves",
+        "Can swap positions of any two beasts of the opponent.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(772).png?raw=true"),
+        new Accessory("Jewel of Journeys",
+        "Beasts can travel any number of positions once during the battle phase.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(773).png?raw=true"),
+        new Accessory("The Eye of Kronus",
+        "Opponent must reveal all accessories in their current hand.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(774).png?raw=true"),
+        new Accessory("Koba's Green Eye",
+        "Exchange your hand of beasts with the opponent. Must be casted before battle phase", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(776).png?raw=true"),
+        new Accessory("Oradu's Cauldron",
+        "Opponent must reveal their best beast in their deck.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(777).png?raw=true"),
+        new Accessory("Telescope",
+        "Opponent must reveal a beast of the owner's choice.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(778).png?raw=true"),
+        new Accessory("Malvel's Map",
+        "Opponent must reveal all beasts in their current hand.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(782).png?raw=true"),
+        new Accessory("Harp",
+        "If it is a draw, owner may return their beasts back to their deck.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(784).png?raw=true"),
+        new Accessory("Ring",
+        "Owner may draw additional 3 cards from the discard pile. Cards may be used in the current round", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(785).png?raw=true"),
+        new Accessory("Targro's Claws",
+        "Bounces a beast back to your deck before battle phase. Owner may draw a different card without looking.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(786).png?raw=true"),
+        new Accessory("Solix's Gloves",
+        "If owner has no place cards in hand or battlefield, they may search their deck for one.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(787).png?raw=true"),
+        new Accessory("White Lightning Token",
+        "Choose a beast type. If the round is a tie or owner loses, they can return beasts of that type back to their deck.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(788).png?raw=true"),
+        new Accessory("Orange Lightning Token",
+        "Choose a beast type. Owner may search their deck and may choose upto X accessories where X is the sum of all beasts of that type. Then discard beasts equal to the lowest size(accessories) in your hand plus 2.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(789).png?raw=true"),
+        new Accessory("Golden Lightning Token",
+        "Choose a beast type. All beasts are of the chosen type.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(790).png?raw=true"),
+        new Accessory("Harpoon",
+        "Defeats beasts with scales or shells.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(791).png?raw=true"),
+        new Accessory("Linka's Feather",
+        "Draw 2 accessories per wizard on the battlefield. Opponent cannot draw any accessories for their wizards that round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(793).png?raw=true"),
+        new Accessory("The Orb of Tangala",
+        "Choose an elemental type. If a beast of chosen type dies, owner may draw a beast from the discard pile without looking. Card exists for 3 consecutive rounds.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(794).png?raw=true"),
+        new Accessory("Magical Powder",
+        "Draw an extra accessory for each OP card owner has.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(795).png?raw=true"),
+        new Accessory("The Dagger of Doom",
+        "If owner does not have the corresponding place card, they may choose one; Age: 20+, Power: 20+, Magic: 10+, Fright Factor: 10+", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(798).png?raw=true"),
+        new Accessory("Enchanted Bell",
+        "Opponent may choose to discard two beasts from their deck at random. If they don't, they can draw only one accessory that turn. Card exists for 3 rounds.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(799).png?raw=true"),
+        new Accessory("Vermok's Tusk",
+        "Discard X accessories from your hand. Draw X cards plus one. ", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(801).png?raw=true"),
+        new Accessory("Magic Scales",
+        "If opponent wins round, make it a tie.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/Screenshot%20(802).png?raw=true"),
+        new Accessory("Torno's Scale",
+        "Opponent must shuffle their hand and place their beasts randomly. Must be casted before battle phase", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/torno'sscale.png?raw=true"),
+        new Accessory("Serpent's Tooth",
+        "Owner may search the discard pile and draw 2 accessories. Can be casted in the current round", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/serpenttooth.png?raw=true"),
+        new Accessory("Mirror",
+        "Owner may use any of the opponent's accessories against them, effectively 'mirroring' their action.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/mirror.png?raw=true"),
+        new Accessory("Dragon Scale",
+        "Disables opponent's accessories for the round. Only affects accessories drawn after the card has been casted", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/dragonscale.png?raw=true"),
+        new Accessory("Chainmail Vest",
+        "Owner may disable opponent's any accessory.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/chainmailvest.png?raw=true")
+    ]
+}
+
+function theArmoury() {
+    return [
+        new Accessory("Tom's Sword",
+        "", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/tom'ssword.png?raw=true"),
+        new Accessory("The Golden Gauntlets",
+        "", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldengauntlets.png?raw=true"),
+        new Accessory("The Golden Boots",
+        "", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenboots.png?raw=true"),
+        new Accessory("The Golden Leg Armour",
+        "", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenlegarmour.png?raw=true"),                                                     
+        new Accessory("The Golden Breastplate",
+        "", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenbreastplate.png?raw=true")  
+    ]
+}
+
+function theAmulets() {
+    return [
+        new Accessory("FIRST PIECE OF AMULET",
+        "Defeats any beasts in the lane, 'AGE'.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/firstpieceofamulet.png?raw=true"),
+        new Accessory("SECOND PIECE OF AMULET",
+        "Defeats any beasts in the lane, 'POWER'.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/secondpieceofamulet.png?raw=true"),
+        new Accessory("Third Piece of Amulet",
+        "Defeats any beasts in the lane, 'MAGIC'.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thirdpieceofamulet.png?raw=true"),
+        new Accessory("Fourth Piece of Amulet",
+        "Defeats any beasts in the lane, 'FRIGHT FACTOR'.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/fourthpieceofamulet.png?raw=true"),                                                     
+        new Accessory("Fifth Piece of Amulet",
+        "Player can win an entire round. No accessories can challenge this amulet.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/fifthpieceofamulet.png?raw=true")
+    ]
+}
+
+function theELementals() {
+    return [
+        new Accessory("Oradu's Magic Staff (Fire)",
+        "All fire beasts may be blocked only by other fire beasts. If owner has no fire cards in hand, they may use it to defeat an opponent's water card instead.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/oradu'smagicstaff.png?raw=true"),
+        new Accessory("Pearl (Water)",
+        "All water beasts may be blocked only by other water beasts. If owner has no water cards in hand, they may use it to defeat an opponent's fire card instead.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/pearl.png?raw=true"),
+        new Accessory("Jade Whistle (Air)",
+        "All flyers may be blocked only by other flyers. If owner has no flyers in hand, they may use it to defeat an opponent's flyer instead.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/jadewhistle.png?raw=true"),                                                     
+        new Accessory("Hecton's Trident (Earth)",
+        "All earth beasts may be blocked only by other earth beasts. If owner has no earth cards in hand, they may use it to defeat an opponent's earth card instead.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/hecton'strident.png?raw=true"),                                                              
+        new Accessory("Net of Silver",
+        "Defeats any animalistic beast.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/netofsilver.png?raw=true")
+    ]
+}
+
+function theJewels() {
+    return [
+        new Accessory("Red Jewel",
+        "Draw beasts equal to the size of all accessories in the owner's hand(max 8). Beasts may be substituted with those in the owner's hand while the rest return to their deck.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/red_jewel.png?raw=true"),
+        new Accessory("Green Jewel",
+        "Defeats WICKED TREES.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/greenjewel.png?raw=true"),
+        new Accessory("Yellow Jewel",
+        "Owner may search their deck for beasts and create a hand of their choice. Must be casted  before battle phase", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/yellowjewel.png?raw=true"),
+        new Accessory("Purple Jewel",
+        "Opponent must reveal all accessories in their current hand and owner may take two of their choice. Accessories may be used in that round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/purplejewel.png?raw=true"),
+        new Accessory("White Jewel",
+        "Can repeat any accessory in hand 3 times. Draw 1 extra card from the discard pile. Card may be used in the current round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/whitejewel.png?raw=true"),
+        new Accessory("Amber Jewel",
+        "Tiebreaker for a single round.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/amberjewel.png?raw=true"),                                                     
+        new Accessory("Magic Belt",
+        "Can shape shift to any jewel of the owner's choice.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/magicBelt.png?raw=true")
+    ]
+}
+
+function misfortunes() {
+    return [
+        new Accessory("Jade Ring",
+        "Defeats AVANTIA.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/jadering.png?raw=true"),
+        new Accessory("Wasp Sting",
+        "Defeats GORGONIA.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/waspsting.png?raw=true"),
+        new Accessory("Red Jewel",
+        "Defeats KING HUGO'S CASTLE.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/redjewel.png?raw=true"),
+        new Accessory("Black Cactus",
+        "Defeats WICKED TREES.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/blackcactus.png?raw=true"),
+        new Accessory("Icicle",
+        "Defeats MALVEL'S CASTLE.", 
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/icicle.png?raw=true")
+    ]
 }
 
 function initialise() {
@@ -235,7 +510,7 @@ function initialise() {
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenlegarmour.png?raw=true"),                                                     
         new Accessory("The Golden Breastplate",
         "", 
-        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenbreastplate.png?raw=true"),                                  
+        "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/thegoldenbreastplate.png?raw=true")                                
     ]
 }
 
