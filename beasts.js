@@ -19,7 +19,7 @@ export default class Beasts {
     }
 
     wizard() {
-        this.wizards = wizard()
+        this.beasts = wizard()
     }
 
     animal() {
@@ -37,21 +37,21 @@ class Beast {
 
 function fireBeasts() {
     return [
-        new Beast("Koba",
+        new Beast("Cornix",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/cornix.png?raw=true"),
-        new Beast("Koba",
+        new Beast("Doomskull",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/doomskull.png?raw=true"),   
-        new Beast("Koba",
+        new Beast("Epos",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/epos.png?raw=true"),    
-        new Beast("Koba",
+        new Beast("Ferno",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/ferno.png?raw=true"), 
-        new Beast("Koba",
+        new Beast("Flaymar",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/flaymar.png?raw=true"),
-        new Beast("Koba",
+        new Beast("Hellion",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/hellion.png?raw=true"),
         new Beast("Koba",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/koba.png?raw=true"),    
-        new Beast("Koba",
+        new Beast("Murk",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/murk.png?raw=true"),
     ]                                                                                                                                                                                       
 }
@@ -95,7 +95,7 @@ function waterBeasts() {
 
 function airBeasts() {
     return [
-        new Beast("Cornix",
+        new Beast("Amictus",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/amictus.png?raw=true"),        
         new Beast("Brutus",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/brutus.png?raw=true"),
@@ -269,7 +269,7 @@ function allBeasts() {
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/balisk.png?raw=true"),
         new Beast("Spikefin",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/spikefin.png?raw=true"),
-        new Beast("Cornix",
+        new Beast("Amictus",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/amictus.png?raw=true"),        
         new Beast("Brutus",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/beasts/brutus.png?raw=true"),

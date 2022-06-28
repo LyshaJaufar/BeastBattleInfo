@@ -94,12 +94,28 @@ li a:hover {
 
 }
 
+.shorten-about-page {
+  height: 500%;
+}
+
 .shorten {
   height: 200%;
 }
 
+.very-shorten {
+  height: 100%;
+}
+
 .shortenOtherPage {
   height: 1400%;
+}
+
+.shortenBeastsPage {
+  height: 370%;
+}
+
+.slightlyShortenBeastsPage {
+  height: 300%;
 }
 
 .image {
@@ -116,6 +132,10 @@ li a:hover {
     user-select: none;
     font-weight: bold;
 
+}
+
+.description {
+  font-weight: 600;
 }
 
 input {
