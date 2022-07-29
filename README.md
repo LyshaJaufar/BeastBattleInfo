@@ -3,5 +3,6 @@ Beast Battle Wiki is the main archive of information relating to the Beast Battl
 
 # What I Learnt
 * CSS media queries
+* Search bar and search filtering
 
 Check out the website here: https://lyshajaufar.github.io/BeastBattleInfo/
