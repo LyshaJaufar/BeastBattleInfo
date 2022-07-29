@@ -213,6 +213,7 @@ function createBeastsHTML(currentCard) {
 
     var div = document.createElement('div')
     var cardHeader = document.createElement('div')
+    var cardBody = document.createElement('div')
     var cardImg = document.createElement('img')
 
     cardImg.setAttribute("src", currentCard.image); 
@@ -220,25 +221,29 @@ function createBeastsHTML(currentCard) {
 
     div.classList.add("card")
     cardHeader.classList.add("header")
+    cardBody.classList.add("body")
     cardImg.classList.add("card-img")
 
     cardHeader.innerHTML = currentCard.name
-
+    cardBody.innerHTML = currentCard.elemental
     
-    if (animalBeastsPage == true || waterPage == true) {
+    if (animalBeastsPage == true) {
         belowHeaderDiv.classList.add('shortenBeastsPage')
-    } else if (earthPage == true || airPage == true) {
+    } else if (firePage == true) {
         belowHeaderDiv.classList.add('slightlyShortenBeastsPage')
-    } else if (allBeastsPage == true) {
-        belowHeaderDiv.classList.add('shortenOtherPage')
     } else if (wizardsPage == true) {
         belowHeaderDiv.classList.add('very-shorten')
-    }
+    } else if (allBeastsPage == true) {
+        belowHeaderDiv.classList.add('shortenBeastsPage3')
+    } else if (waterPage == true) {
+        belowHeaderDiv.classList.add('waterBeastsPage')
+    }   
     else {
-        belowHeaderDiv.classList.add('shorten')
+        belowHeaderDiv.classList.add('shortenBeastsPage2')
     }
 
     div.appendChild(cardImg)
     div.appendChild(cardHeader)
+    div.appendChild(cardBody)
     userCards.appendChild(div)
 }
