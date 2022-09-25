@@ -244,7 +244,7 @@ function theELementals() {
 function theJewels() {
     return [
         new Accessory("Red Jewel",
-        "Draw beasts equal to the size of all accessories in the owner's hand(max 8). Beasts may be substituted with those in the owner's hand while the rest return to their deck.", 
+        "Roll a dice. Draw beasts upto the number rolled. Beasts may be substituted with those in the owner's hand while the rest return to their deck.", 
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/red_jewel.png?raw=true"),
         new Accessory("Green Jewel",
         "Defeats WICKED TREES.", 
