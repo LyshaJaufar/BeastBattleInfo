@@ -27,7 +27,7 @@ function initialise() {
         "Beasts  in the lane 'FEAR', will gain +10 infinitely until the opponent disables the card.",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/wickedtrees.png?raw=true"),
         new Place("Malvel's Castle", 
-        "Beasts  in the lane 'AGE', will gain +10 infinitely until the opponent disables the card.",
+        "Beasts in any lane of your choice will gain +10 infinitely until the opponent disables the card.",
         "https://github.com/LyshaJaufar/BeastBattleInfo/blob/master/assets/malvel'scastle.png?raw=true"),
     ]
 }
